@@ -7,7 +7,7 @@ import Experience from '@/app/experience'
 import Skills from '@/components/skills'
 import Contact from '@/components/contatc'
 import Footer from '@/components/footer'
-import Menu from '@/components/menu'
+import Hero from '@/app/hero'
 
 import Skillsh from '@/components/skillsh'
 export default function Page() {
@@ -24,23 +24,22 @@ export default function Page() {
   return (
     <main className="min-h-screen w-full bg-white space-y-6 bg-white-400">
       <div className="max-w-3xl mx-auto px-2 py-2 space-y-8 animate-fade-in">
-
-       <Menu/>
+      <Hero />
+    
         <About />
-       
-        
 
         {showContent && (
          <div className="max-w-3xl mx-auto px-2 py-2 space-y-8 animate-fade-in">
-            <Experience />
             <Skillsh/>
             <Skills />
+            <Experience />
 
           </div>
         )}
       </div>
       <Contact />
-      <Footer />
+    <Footer />
+
     </main>
   )
 }
