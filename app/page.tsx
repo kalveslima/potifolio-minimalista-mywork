@@ -24,22 +24,22 @@ export default function Page() {
   return (
     <main className="min-h-screen w-full bg-white space-y-6 bg-white-400">
       <div className="max-w-3xl mx-auto px-2 py-2 space-y-8 animate-fade-in">
+
        <Menu/>
-       
-        
         <About />
-        
        
-        <Experience />
+        
+
         {showContent && (
          <div className="max-w-3xl mx-auto px-2 py-2 space-y-8 animate-fade-in">
-            
-            <Skills />
+            <Experience />
             <Skillsh/>
-            <Contact />
+            <Skills />
+
           </div>
         )}
       </div>
+      <Contact />
       <Footer />
     </main>
   )
