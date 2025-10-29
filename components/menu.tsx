@@ -4,7 +4,7 @@ import About from "@/app/about";
 import Experience from "@/app/experience";
 import Contact from "@/components/contatc";
 import Skills from "@/components/skills";
-import Hero from "./hero";
+
 
 // Definição do tipo para as chaves do menu
 type ComponentKey = "home" | "about" | "experience" | "contact" | "skills";
@@ -117,7 +117,7 @@ export default function Home() {
 
       <main className="pt-16">
         <section ref={homeRef} id="home">
-          <Hero />
+         
         </section>
 
         <section ref={aboutRef} id="about">

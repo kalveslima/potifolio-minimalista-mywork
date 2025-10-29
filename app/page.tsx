@@ -8,7 +8,7 @@ import Skills from '@/components/skills'
 import Contact from '@/components/contatc'
 import Footer from '@/components/footer'
 import Menu from '@/components/menu'
-import Hero from '@/components/hero'
+
 import Skillsh from '@/components/skillsh'
 export default function Page() {
   const [showContent, setShowContent] = useState(false)
